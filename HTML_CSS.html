@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    
+@media screen and (max-width: 400px) {
+
+body{
+width: 100%;
+height: 100%;
+}
+
+.topnav {
+display: grid;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  
+  color: #f2f2f2;
+  
+    
+  
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  grid-template-columns: 1fr;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: none;
+  color: white;
+}
+
+
+
+.flex-container{
+display: flex;
+flex-direction: column;
+height : calc(100vh - 8em);
+
+}
+
+.flex-container .row1{
+
+width: auto;
+height :auto;
+
+
+
+}
+
+
+
+
+
+
+.flex-container .row2{
+
+height : auto;
+width: auto;
+
+
+
+}
+
+
+
+
+
+
+#post{
+
+	color: #808080;
+
+}
+
+
+
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 2em;
+   background-color: #000;
+   color: white;
+   text-align: left;
+}
+
+#footerm{
+color: red;
+
+}
+
+
+}
+
+@media only screen and (max-width: 1366px){
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: none;
+  color: white;
+}
+
+.flex-container{
+display: flex;
+
+}
+
+#post{
+
+	color: #808080;
+
+}
+
+
+.row1{
+position: relative;
+width: 75%;
+height : calc(100vh - 8em);
+margin: 10px;
+
+}
+.row2{
+position: relative;
+width: 25%;
+ height : calc(100% - 8em);
+margin: 10px;
+
+
+}
+
+.row1 .main1 {
+position: relative;
+border-radius: 10px;
+
+height: calc((100vh - 10em)/2);
+background-color : #F5F5F5;
+
+}
+
+.row1 .main2{
+border-radius: 10px;
+height: calc((100vh - 10em)/2);
+background-color : #F5F5F5;
+
+
+}
+
+
+.sidebar1 {
+
+position: relative;
+border-radius: 10px;
+height: calc((100% - 11em)/3);
+background-color : #F5F5F5;
+
+
+}
+
+.sidebar2 {
+position: relative;
+border-radius: 10px;
+height: calc((100% - 11em)/3);
+background-color : #F5F5F5;
+
+}
+
+.sidebar3 {
+position: relative;
+border-radius: 10px;
+height: calc((100% - 9em)/2.5);
+background-color : #F5F5F5;
+
+}
+
+.footer {
+
+   position: fixed;
+   
+   bottom: 0;
+   width: 100%;
+    height: 1.9em;
+	font-size: 1em;
+   background-color: #000;
+   color: white;
+   text-align: left;
+   
+}
+
+#footerm{
+color: red;
+font-size: 1em;
+}
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#profile">Profile</a>
+  <a href="#signup">SignUp</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class = "container">
+<div class = "flex-container">
+
+<div class = "row1">
+<div class="main1">
+
+
+<h1>First Post</h1>
+	<p id = "post"><i>Content used to describe first post</i></p>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  
+ </div>
+
+<div class="main2">
+
+<h1>Second Post</h1>
+	<p id = "post"><i>Content used to describe second post</i></p>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+ </div>
+</div>
+<div class = "row2">
+<div class="sidebar1">
+  <h1>Top Sidebar</h1>
+  <p id = "post"><i>Content used to describe Top post</i></p>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  
+</div>
+
+<div class="sidebar2">
+  <h1>Middle Sidebar</h1>
+  <p id = "post"><i>Content used to describe Middle post</i></p>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  
+</div>
+
+<div class="sidebar3">
+  <h1>Bottom Sidebar</h1>
+  <p id = "post"><i>Content used to describe Bottom post</i></p>
+  <p>Chania is the capital of the Chania region on the island of Crete.</p>
+  
+  
+</div>
+</div>
+
+<div class="footer">
+  <p>Copyright <span id = "footerm">@MarLabs Inc</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
